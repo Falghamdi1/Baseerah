@@ -1,0 +1,67 @@
+BASEERAH (بصيرة) — AI SIMULATION COPILOT FOR FUTURE RESOURCE OPTIMIZATION
+PSU AI Hackathon 2.0 | May 2026
+Author: Faisal Alghamdi | College of Computer & Information Sciences | Prince Sultan University
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ABSTRACT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Saudi households lose thousands of riyals every year to three invisible resource
+drains: food that spoils before it is eaten, electricity consumed in inefficient
+patterns, and water used far above sustainable levels. The true cost of these
+habits only becomes visible months later — by which point behavioral change feels
+difficult and the financial damage is already done. Existing tools either monitor
+consumption passively or present raw numbers that users cannot act on. What is
+missing is not data — it is consequence.
+
+Baseerah (بصيرة), meaning "insight" in Arabic, is an AI-powered simulation
+copilot that makes the future cost of daily habits visible before it happens.
+The system asks users plain, everyday questions — "How long are your showers?",
+"How often does food go to waste?", "How many hours is your AC on?" — and
+instantly simulates three parallel futures: a Current path with no changes, an
+Optimized path using practical smart habits, and an Aggressive path for maximum
+savings. All three scenarios run simultaneously across four time horizons:
+3 months, 6 months, 1 year, and 3 years.
+
+The core innovation is a translation layer that converts friendly user answers
+into calibrated model parameters without exposing any technical values. Under
+the hood, three physics-based models run the simulation. The electricity model
+uses linear regression to derive monthly kWh consumption from AC runtime,
+appliance usage, and laundry frequency, then applies a time-of-use pricing
+uplift for peak-hour households and a Saudi seasonal overlay. The food waste
+model compounds four factors — fridge temperature spoilage, meal-prep
+exponential decay, weekend spike patterns, and deterministic noise — to produce
+weekly waste projections in SAR. The water model decomposes household
+consumption into components (shower duration at 9 L/min, laundry at 65 L/load,
+irrigation, and general use) and reduces each independently per strategy.
+
+The system is built on a FastAPI backend with Pydantic validation and a Vanilla
+JavaScript frontend with Chart.js visualizations. All constants are grounded in
+published data from the Saudi Electricity Company (SEC), the National Water
+Company (NWC), the Saudi Energy Efficiency Center (SEEC), the Food and
+Agriculture Organization (FAO), and the World Health Organization (WHO). The
+application runs fully offline — opening the HTML file in any browser launches
+a complete simulation without a server.
+
+Results validated against the demo profile (Ahmed, Riyadh, household of 3) show
+that Optimized mode achieves a 25% reduction in electricity, 38% reduction in
+food waste, and 22% reduction in water usage, saving approximately SAR 10,500
+over three years with no hardware purchases and no major lifestyle changes. An
+AI insights engine detects behavioral patterns — weekend waste spikes, peak-hour
+electricity draw, excessive shower duration — and ranks them by financial impact,
+generating specific actionable recommendations for each.
+
+A Campus Mode toggle scales the same simulation by 300 university residential
+units, transforming a household dashboard into an institution-level sustainability
+decision tool — projecting annual campus savings of SAR 3.1 million under
+optimized operation.
+
+Baseerah demonstrates that the barrier to sustainable behavior is not motivation
+— it is visibility. When people see their future in SAR, they change.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+KEYWORDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AI simulation · behavioral change · resource optimization · sustainability ·
+food waste · electricity · water · Saudi Arabia · linear regression ·
+multi-factor modeling · FastAPI · hackathon

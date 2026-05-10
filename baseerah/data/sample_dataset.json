@@ -1,0 +1,64 @@
+{
+  "demo_profile": {
+    "name": "Ahmed",
+    "description": "Typical Riyadh household — used as the preloaded demo profile",
+    "household_size": 3,
+    "food": {
+      "weekly_grocery_spend_sar": 280,
+      "waste_frequency": "sometimes",
+      "meal_planning": "sometimes",
+      "fridge_freshness": "sometimes"
+    },
+    "electricity": {
+      "ac_hours_per_day": 8,
+      "appliance_usage": "moderate",
+      "peak_time": "late_night"
+    },
+    "water": {
+      "shower_length": "normal",
+      "showers_per_day": 4,
+      "laundry_per_week": 3,
+      "garden_watering": "rarely"
+    },
+    "derived_params": {
+      "monthly_kwh_estimate": 435,
+      "food_waste_pct": 22,
+      "fridge_temp_c": 6.0,
+      "shower_min": 10,
+      "weekly_water_liters": 3930
+    }
+  },
+  "valid_field_values": {
+    "waste_frequency":  ["rarely", "sometimes", "often", "very_often"],
+    "meal_planning":    ["never", "sometimes", "most_days", "every_day"],
+    "fridge_freshness": ["always", "sometimes", "often"],
+    "appliance_usage":  ["minimal", "moderate", "heavy", "very_heavy"],
+    "peak_time":        ["morning", "afternoon", "evening", "late_night"],
+    "shower_length":    ["quick", "normal", "long", "very_long"],
+    "garden_watering":  ["none", "rarely", "weekly", "daily"]
+  },
+  "model_constants": {
+    "SAR_PER_KWH": 0.18,
+    "SAR_PER_M3": 4.00,
+    "L_PER_SHOWER_MIN": 9.0,
+    "L_PER_LAUNDRY_LOAD": 65.0,
+    "KWH_PER_LAUNDRY": 0.9,
+    "AC_KWH_PER_HOUR": 1.2,
+    "AC_BILL_SHARE": 0.55,
+    "FRIDGE_OPTIMAL_C": 3.5,
+    "FRIDGE_SPOIL_RATE": 0.07,
+    "GCC_AVG_WASTE_PCT": 22.0,
+    "sources": {
+      "SAR_PER_KWH": "Saudi Electricity Company (SEC) — Band 1 residential tariff",
+      "SAR_PER_M3": "National Water Company (NWC) — residential tariff",
+      "L_PER_SHOWER_MIN": "Water Research Center, KSA",
+      "L_PER_LAUNDRY_LOAD": "Front-loader manufacturer average",
+      "KWH_PER_LAUNDRY": "Energy Star appliance ratings",
+      "AC_KWH_PER_HOUR": "Saudi split-unit average (SEEC)",
+      "AC_BILL_SHARE": "Saudi Energy Efficiency Center (SEEC)",
+      "FRIDGE_OPTIMAL_C": "WHO food safety guidelines",
+      "FRIDGE_SPOIL_RATE": "Food microbiology literature",
+      "GCC_AVG_WASTE_PCT": "FAO (2019) GCC food waste benchmark"
+    }
+  }
+}

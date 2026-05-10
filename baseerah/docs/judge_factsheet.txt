@@ -1,0 +1,72 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  BASEERAH (بصيرة)  ·  PSU AI Hackathon 2.0  ·  May 2026
+  AI Simulation Copilot for Future Resource Optimization
+  Author: Faisal Alghamdi  |  Prince Sultan University
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE PROBLEM
+  Saudi households lose thousands of SAR/year to invisible drains.
+  They feel it on bills — months later — when it's too late to act.
+
+THE SOLUTION
+  Answer plain questions. See 3 futures. Pick one.
+  No kWh. No litres. No degrees. Just chips and sliders.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT IT SIMULATES
+  ● Food waste    ● Electricity    ● Water
+
+3 STRATEGIES SIMULTANEOUSLY
+  📍 Current    ✨ Optimized    🔥 Aggressive
+
+4 TIME HORIZONS
+  3 Months  ·  6 Months  ·  1 Year  ·  3 Years
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RESULTS  (Ahmed · Riyadh · 3 people)
+                Current    Optimized    Aggressive
+  Weekly cost   SAR 109    SAR 74       SAR 49
+  Electricity   176 kWh    132 kWh      97 kWh
+  Food waste    22%        14%          8%
+  Water         3,930 L    3,065 L      2,285 L
+
+  ★  Optimized mode saves SAR 10,500 over 3 years
+  ★  Zero hardware purchases required
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE AI MODELS
+  Electricity   Linear regression  (AC hours + appliances + laundry)
+  Food waste    Multi-factor rules (fridge temp × meal-prep × weekend spike)
+  Water         Component model    (shower + laundry + irrigation)
+
+TECH STACK
+  Backend       FastAPI + Python 3.10 + Pydantic
+  Frontend      Vanilla JS + Chart.js
+  Works offline  Open index.html in any browser — no server needed
+  API docs       localhost:8000/docs  (live Swagger UI)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CAMPUS MODE
+  One toggle → ×300 university units
+  Campus savings (optimized):  SAR 3.1 million / year
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DATA SOURCES
+  SEC  (SAR 0.18/kWh)  ·  NWC  (SAR 4.00/m³)
+  FAO  (22% GCC waste benchmark)
+  WHO  (3.5°C fridge optimal)
+  SEEC (55% AC share of bill)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"We don't predict the future — we help you choose it."
+
+  Demo:   Open frontend/index.html in any browser
+  API:    localhost:8000/docs
+  Event:  acmpsu.com/aihack
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
